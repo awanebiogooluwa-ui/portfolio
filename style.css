@@ -395,6 +395,45 @@ col h4{
     background-color: orangered;
     color:white;
 }
+@media(max-width:768px){
+    .hero-wrapper{
+        flex-direction: column;
+    }
+    .hero-left,
+    .hero-right{
+        width: 100%;
+    }
+    .hero-right{
+        min-height: 60vh;
+    }
+    .hero-content h1{
+        font-size: 36px;
+    }
+    .hero-content{
+        padding: 0 30px 60px 30px;
+    }
+    .header-left,
+    .About,
+    .works-section,
+    .contact-section{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .section-head h2{
+        font-size: 32px;
+    }
+    .big-num{
+        font-size: 80px;
+        top: -25px;
+    }
+    .contact-grid{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .nav_link ul{
+        gap: 15px;
+    }
+}
 
 
 

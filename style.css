@@ -1,0 +1,400 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.hero-wrapper{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero-left{
+    width: 50%;
+    background-color:  white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-left{
+    background-color: #ffffff;
+    padding: 30px 60px;
+    width: 100%;
+}
+
+.nav_link ul{
+    
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row !important;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.logo{
+    color: white;
+    
+    font-weight: 700;
+    font-size: 26px;
+    font-family:serif;
+    display: flex;
+    text-decoration: none;
+     color:  #333333;
+    
+
+}
+.hero-content{
+    padding: 0 60px 100px 60px;
+}
+.subtitle{
+    color: #d9534f;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1{
+    font-family: serif;
+    font-size: 70px;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    
+}
+
+.btn-group{
+    display: flex;
+    gap: 15px;
+}
+.btn{
+    padding: 14px 24px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+    
+    
+}
+
+.btn-dark{
+    background-color: black;
+    color: white;
+    box-sizing: content-box;
+    
+
+}
+
+.btn-outline{
+    border: 1px solid #cccccc;
+    background-color: black;
+    color: white;
+}
+.btn-dark:hover{
+    background-color:orangered;
+}
+
+.hero-right{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.4),rgba(0, 0,  0,  0.1)),
+    url('photo.jpg')center top/cover no-repeat;
+    background-color: #000000;
+   
+}
+
+
+
+.Intro h3{
+    color: red;
+    justify-content: end;
+    padding-top: 50px;
+    margin-left: 50px;
+
+} 
+.nav_link a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+.nav_link a:hover{
+    color: #000000;
+}
+
+/* ABOUT */
+.About{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 120px 60px;
+    box-sizing: border-box
+}
+
+.section-head{position: relative;  margin-bottom: 60px;}
+.section-head h2{
+    font-size: 52px;
+    font-weight: 400;
+    color:#444444;
+}
+
+.big-num{
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 140px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.06);
+    z-index: -1;
+}
+.about-text p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 25px;
+}
+.col{flex: 1;
+    margin-top: 40px;
+}
+col h4{
+    font-size: 18px;
+    font-family: serif;
+    margin-bottom: 20px;
+    border-left: 3px solid  #d9534f;
+    font-weight: 700;
+    padding-left: 15px;
+    text-transform: uppercase;
+    
+}
+.col ul{
+    text-decoration: none;
+    color: red;
+    list-style: none;
+    align-items: center;
+
+}
+
+.col li{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color:grey;
+    background-color: white;
+    border: 1px solid  white;
+    padding: 8px 16px ;
+}
+
+/* works */
+.works-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.works-section h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.works-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-card{
+    flex: 1 1 calc(33.333%-20px);
+    min-width: 250px;
+}
+
+
+.work-card img{
+    width: 100%;
+    height: 80%px;
+    object-fit: cover;
+    display: block;
+}
+
+.mansory-brick{
+    flex: 1 1 calc(3333.333%-20px);
+    max-width: 280px;
+}
+
+.item-folio-thumb{
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.item-folio-thumb img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease , transform 0.4s ease;
+}
+.item-folio-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+
+.item-folio-title{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item-folio-cat{
+    color: grey;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.item-folio-thumb:hover.item-folio-text{
+    opacity: 1;
+}
+
+.item-folio-thumb:hover img{
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+.contact-section{
+    background-color: #2b2b2b;
+    color: white;
+    padding: 150px 60px 40px 60px;
+    position: relative;
+    z-index: 0;
+
+}
+
+.contact-section .section-head h2{
+    color: white;
+    font-family: serif;
+}
+.contact-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    
+}
+.contact-main p{
+    flex: 2 1 400px;
+}
+
+
+
+.contact-main p{
+    font-size: 20px;
+    line-height: 1.7;
+    color: white;
+    margin-bottom: 50px;
+}
+.btn-message{
+    display: block;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.btn-message:hover{
+    background-color: #d9421c;
+}
+
+.contact-col{
+    flex:  1 1  180px;
+}
+
+.contact-col ul{
+    list-style: none;
+}
+.contact-col li{
+    margin-bottom: 10px;
+}
+.contact-col a{
+    color: white;
+    text-decoration: none;
+}
+.contact-col:hover{
+    color: orange;
+}
+.site-footer{
+    border-top: 1px solid #444444;
+    padding-top: 30px;
+    color: grey;
+    font-size: 14px;
+}
+.contact-section .big-num{
+     position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 140px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.12);
+    z-index: -1;
+
+
+
+
+}
+
+.contact-grid{
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.btn-hire{
+    display: inline-block;
+    border:  1px solid white;
+    color:  white;
+    padding: 14px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    align-self: flex-start;
+    background-color: #000000;
+}
+.btn-hire:hover{
+    background-color: orangered;
+    color:white;
+}
+
+
+
